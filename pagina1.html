@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaco Homem</title>
+    <link rel="stylesheet" href="./aquivos css/csspagina1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaco Homem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--link da fonte google fontes-->
+</head>
+
+<body>
+    <!--cabecalho da pagina com logotipo e barra de navegacao -->
+    <header class="header-container">
+        <img src="../projeto/imagens/Design sem nome (9).png" alt="Logo da Loja" class="header-image">
+        <nav class="navbar">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button> <!-- Botão hambúrguer somente e xibido em telas menores -->
+            <div class="menu-items">
+                <a href="#">HOME</a>
+                <a href="#">SOBRE</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">UNIDADES</a>
+                <a href="#">CORTES</a>
+                <a href="#">BLOG</a>
+                <a href="#"> CONTATO</a>
+                <button id="marcacao">
+                    <a href="./pagina de agendamentos.html" class="botao">MARQUE SEU HORÁRIO</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Container do Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="../projeto/imagens/o espaco do homem.png" alt="Imagem1">
+            <img src="../projeto/imagens/o espaco do homem (1).png" alt="Imagem2">
+            <img src="../projeto/imagens/banner1.png" alt="imagem3">
+        </div>
+        <div class="sobre">
+            <DIv class="texto">
+                <h2>SOBRE</h2>
+                <p>
+                    Na Barbearia Barbershop, tradição e estilo moderno se encontram para <BR>
+                    </BR> oferecer uma experiência única. Com
+                    um ambiente elegante e acolhedor, <BR></BR> nossa equipe de barbeiros especialistas proporciona
+                    cortes de cabelo,
+                    barba <BR></BR> e tratamentos de bem-estar de alta qualidade. Cada cliente recebe um atendimento
+                    <BR></BR> personalizado,
+                    utilizando os melhores produtos para garantir uma experiência <BR></BR> de luxo. Aqui, você relaxa,
+                    renova seu
+                    visual e sai pronto para impressionar. <BR></BR> Venha viver a experiência Barbershop e descubra o
+                    cuidado que
+                    você merece!
+                </p>
+            </DIv>
+            <!-- Botões de Navegação -->
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        <div class="servicos">
+            <H1> NOSSOS SERVIÇOS</H1>
+        </div>
+        <div class="icones">
+            <div> <IMg src="../projeto/imagens/18-Cabelo-Barba.png.crdownload"></IMg>CABELO E BARBA </div>
+            <DIV> <IMG src="../projeto/imagens/03-Quimica.png.crdownload"></IMG> QUIMICA CAPILAR </DIV>
+            <DIV> <IMG src="../projeto/imagens/09-Massagem.png"></IMG> MASSAGEM </DIV>
+            <div> <img src="../projeto/imagens/11-LimpezaDePele.png.crdownload" alt=""> ESTETICA MASCULINA</div>
+            <DIV><IMg src="../projeto/imagens/12-Dia-do-Noivo.png"></IMg> DIA DO NOIVO </DIV>
+            <DIv> <IMg src="../projeto/imagens/07-Manicure-e-Pedicure.png.crdownload"></IMg> MANICURE E PEDICURE </DIv>
+            <DIV> <img src="../projeto/imagens/14-Sinuca.png.crdownload" alt="sinuca"> SINUCA</DIV>
+            <DIV><img src="../projeto/imagens/15-Poker.png.crdownload" alt="poker"> POKER </DIV>
+            <DIV> <img src="./imagens/14-Sinuca.png.crdownload" alt="bar">BAR </DIV>
+        </div>
+        <div class="conteiner">
+            <div class="lazer">
+                <H1>LAZER</H1>
+            </div>
+            <div class="imagens">
+                <DIV class="cervejas"> <IMG src="./imagens/site-08_.png">
+                    <h3>CERVEJAS E DESTILADOS </h3></IMG>
+                    <p>Na nossa barbearia, oferecemos muito mais <br> do que apenas cortes de cabelo e cuidados <br> com
+                        a barba. Enquanto você espera pelo seu <br>atendimento ou simplesmente deseja relaxar, <br>
+                        convidamos você a desfrutar de nossa seleção <br> exclusiva de cervejas e destilados.</p>
+                </DIV>
+                <div class="poker"> <IMG src="./imagens/site-09.png">
+                    </IMG>
+                    <h3>POKER </H3>
+                    <p> Em um ambiente descontraído e elegante, <br>nossa sala de poker é perfeita para quem <br>
+                        aprecia o jogo e quer aproveitar momentos <br> de lazer com estilo. Seja um jogador experiente
+                        <br> ou um iniciante curioso, aqui você encontrará o <br> espaço ideal para relaxar, competir e
+                        se divertir.</p>
+                </div>
+                <div class="jogos">
+                    <IMg src="./imagens/Site-10.png"> </IMg>
+                    <h3>JOGOS</h3>
+                    <p> Na nossa barbearia, sabemos que momentos <br> de espera podem ser uma ótima oportunidade <br>
+                        para relaxar e se divertir. Por isso, oferecemos <br> uma seleção de jogos para entreter nossos
+                        <br>
+                        clientes enquanto esperam pelo atendimento.
+                    <p></p>
+                </div>
+            </div>
+        <!-- botao com o link link para a pagina de agendamentos-->
+            <DIV class="fundo"> <button> <a href="./pagina de agendamentos.html" id="agendamento"> AGENDE SEU HORÁRIO </a></button></DIV>
+
+        </div>
+
+
+
+</body>
+
+<script>
+    // Função para alternar a exibição do menu no botão hambúrguer
+    function toggleMenu() {
+        const menuItems = document.querySelector('.menu-items');
+        menuItems.style.display = menuItems.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Controle do carrossel
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide img');
+
+    // Exibir o slide atual
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    // Função para ir ao próximo slide
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // Função para voltar ao slide anterior
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // Alterna slides automaticamente a cada 3 segundos
+    setInterval(nextSlide, 3000);
+
+    // Inicializa o carrossel mostrando o primeiro slide
+    showSlide(currentIndex);
+</script>
+
+</html>

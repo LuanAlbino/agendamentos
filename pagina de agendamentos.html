@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horário</title>
+    <link rel="stylesheet" href="./aquivos css/csspagina2.css"> <!-- link pra o arquivo css -->
+   <script src="./backand/scripagendamento.js"> /*link para o arquivo java script externo*/</script>
+</head>
+<body>
+    <h2>Formulário de Agendamento</h2>
+    <!-- formulario para agendamentos de horarios-->
+    <form id="agendamento-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="horarios">Escolha um Horário:</label>
+        <select id="horarios" name="horarios" required>
+            <option value="">Selecione um horário</option>
+        </select>
+
+        <input type="submit" value="Marcar Horário">
+    </form>
+</body>
+</html>
